@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.cqs.xlayout.SuperLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@android:color/black"
+        app:radius="6dp">
+        <cn.cqs.http.loading.ChrysanthemumView
+            android:id="@+id/loading_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/loading_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="加载中..."/>
+    </cn.cqs.xlayout.SuperLinearLayout>
+
+</RelativeLayout>
